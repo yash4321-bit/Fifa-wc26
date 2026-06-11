@@ -1,140 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>FIFA World Cup 2026 Live</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f3f6fb;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIFA World Cup 2026 Live Hub</title>
 
-    header {
-      background: linear-gradient(135deg, #001f54, #0066cc);
-      color: white;
-      padding: 25px;
-      text-align: center;
-    }
+<style>
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f4f4f4;
+}
 
-    nav {
-      background: #111;
-      padding: 10px;
-      text-align: center;
-    }
+header{
+background:#002b7f;
+color:white;
+padding:20px;
+text-align:center;
+}
 
-    nav a {
-      color: white;
-      margin: 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+section{
+background:white;
+margin:15px;
+padding:15px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
 
-    section {
-      background: white;
-      margin: 20px;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px #ccc;
-    }
+h2{
+color:#002b7f;
+}
 
-    h2 {
-      color: #0066cc;
-    }
+.card{
+background:#eef4ff;
+padding:10px;
+margin:10px 0;
+border-radius:8px;
+}
 
-    .card {
-      background: #eef5ff;
-      padding: 12px;
-      margin: 10px 0;
-      border-radius: 8px;
-    }
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
 
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-  </style>
+a{
+color:#0066cc;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>FIFA World Cup 2026</h1>
-  <p>Live Scorecard, Fixtures & Broadcasters</p>
+<h1>⚽ FIFA World Cup 2026</h1>
+<p>Live Scores • Fixtures • Schedule • Streaming</p>
 </header>
 
-<nav>
-  <a href="#live">Live Score</a>
-  <a href="#fixtures">Fixtures</a>
-  <a href="#broadcasters">Broadcasters</a>
-  <a href="#news">News</a>
-</nav>
+<section>
+<h2>🔴 Live Score</h2>
 
-<section id="live">
-  <h2>Live Score</h2>
-  <div class="card">
-    <h3>No live match right now</h3>
-    <p>Live score API will be added here.</p>
-  </div>
+<div class="card">
+<b>No FIFA World Cup match live currently</b><br>
+Live score API integration required for real-time updates.
+</div>
 </section>
 
-<section id="fixtures">
-  <h2>Fixtures</h2>
-  <div id="fixtureList"></div>
+<section>
+<h2>📅 Upcoming Matches</h2>
+
+<div class="card">
+Mexico vs TBD
+</div>
+
+<div class="card">
+Canada vs TBD
+</div>
+
+<div class="card">
+USA vs TBD
+</div>
+
 </section>
 
-<section id="broadcasters">
-  <h2>Broadcasters</h2>
-  <div id="broadcasterList"></div>
+<section>
+<h2>🏆 Tournament Schedule</h2>
+
+<div class="card">
+Opening Match: June 11, 2026
+</div>
+
+<div class="card">
+Group Stage: June 11 - June 27
+</div>
+
+<div class="card">
+Round of 32: June 28 - July 3
+</div>
+
+<div class="card">
+Round of 16: July 4 - July 7
+</div>
+
+<div class="card">
+Quarter Finals: July 9 - July 11
+</div>
+
+<div class="card">
+Semi Finals: July 14 - July 15
+</div>
+
+<div class="card">
+Final: July 19, 2026
+</div>
+
 </section>
 
-<section id="news">
-  <h2>Latest Updates</h2>
-  <div class="card">
-    <p>Visit official FIFA website for latest updates.</p>
-    <a href="https://www.fifa.com" target="_blank">Open FIFA Official Site</a>
-  </div>
+<section>
+<h2>📺 Streaming Platforms</h2>
+
+<div class="card">USA - FOX Sports</div>
+<div class="card">USA (Spanish) - Telemundo / Peacock</div>
+<div class="card">UK - BBC / ITV</div>
+<div class="card">Canada - TSN / CTV</div>
+<div class="card">Australia - SBS</div>
+<div class="card">Middle East - beIN Sports</div>
+<div class="card">India - Check official broadcaster announcement</div>
+
+</section>
+
+<section>
+<h2>🌐 Official FIFA Website</h2>
+
+<p>
+Visit
+<a href="https://www.fifa.com" target="_blank">
+FIFA Official Website
+</a>
+for latest scores, teams and news.
+</p>
+
 </section>
 
 <footer>
-  <p>© 2026 FIFA World Cup Fan Website</p>
+© 2026 FIFA World Cup Fan Website
 </footer>
-
-<script>
-const fixtures = [
-  "Opening Match - June 2026",
-  "Group Stage Matches",
-  "Round of 32",
-  "Round of 16",
-  "Quarter Finals",
-  "Semi Finals",
-  "Final Match"
-];
-
-const broadcasters = [
-  "India - Official broadcaster / streaming partner",
-  "USA - FOX Sports",
-  "UK - BBC / ITV",
-  "Canada - TSN / CTV",
-  "Australia - SBS"
-];
-
-document.getElementById("fixtureList").innerHTML =
-  fixtures.map(match => `
-    <div class="card">
-      <h3>${match}</h3>
-      <p>Time and teams will be updated soon.</p>
-    </div>
-  `).join("");
-
-document.getElementById("broadcasterList").innerHTML =
-  broadcasters.map(channel => `
-    <div class="card">
-      <p>${channel}</p>
-    </div>
-  `).join("");
-</script>
 
 </body>
 </html>
