@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIFA World Cup 2026 Live Scorecard, Fixtures & Broadcasters</title>
+  <meta name="description" content="Follow FIFA World Cup 2026 scorecards, match fixtures, group table, top scorers and TV broadcasters in one fast mobile-friendly site." />
+  <meta name="keywords" content="FIFA World Cup 2026, world cup scorecard, football live score, fifa fixtures, world cup broadcaster, football points table" />
+  <meta name="author" content="World Cup Score Hub" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/" />
+  <meta property="og:title" content="FIFA World Cup 2026 Scorecard & Broadcasters" />
+  <meta property="og:description" content="Latest FIFA World Cup match scorecards, fixtures, group standings and broadcasters." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <meta property="og:image" content="https://your-domain.com/assets/preview.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/ball.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "World Cup Score Hub",
+    "url": "https://your-domain.com/",
+    "description": "FIFA World Cup scorecards, fixtures, standings and broadcasters.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://your-domain.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#home"><img src="assets/ball.svg" alt="Football icon">World Cup Score Hub</a>
+    <nav>
+      <a href="#scores">Scores</a>
+      <a href="#fixtures">Fixtures</a>
+      <a href="#table">Table</a>
+      <a href="#broadcast">Broadcasters</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div>
+        <p class="tag">FIFA World Cup 2026 Tracker</p>
+        <h1>Live-style football scorecards, fixtures and broadcasters</h1>
+        <p class="hero-text">A fast, mobile-friendly fan website made for search traffic. Update the scores daily and share it on WhatsApp, Instagram and Google Search Console.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#scores">View Scorecards</a>
+          <a class="btn" href="#broadcast">Watch Info</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <span>Next Match</span>
+        <h2>USA vs Canada</h2>
+        <p>Group A • 8:30 PM IST</p>
+        <strong>Countdown: <span id="countdown">Updating...</span></strong>
+      </aside>
+    </section>
+
+    <section class="search-box" aria-label="Search matches">
+      <input id="searchInput" type="search" placeholder="Search team, venue, broadcaster..." />
+    </section>
+
+    <section id="scores" class="section">
+      <div class="section-title">
+        <p>Scorecards</p>
+        <h2>Latest Match Scorecards</h2>
+      </div>
+      <div id="scoreCards" class="grid cards"></div>
+    </section>
+
+    <section id="fixtures" class="section split">
+      <div>
+        <div class="section-title">
+          <p>Fixtures</p>
+          <h2>Upcoming Matches</h2>
+        </div>
+        <div id="fixturesList" class="list"></div>
+      </div>
+      <article class="news-card">
+        <p class="tag">Daily update idea</p>
+        <h3>How to get more views</h3>
+        <p>Publish short match previews before every game, update scorecards after full time, and add simple questions like “Who will win today?” to increase sharing.</p>
+      </article>
+    </section>
+
+    <section id="table" class="section">
+      <div class="section-title">
+        <p>Standings</p>
+        <h2>Group A Points Table</h2>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr></thead>
+          <tbody id="pointsTable"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <p>Stats</p>
+        <h2>Top Scorers</h2>
+      </div>
+      <div id="scorers" class="grid small-cards"></div>
+    </section>
+
+    <section id="broadcast" class="section">
+      <div class="section-title">
+        <p>TV & Streaming</p>
+        <h2>World Cup Broadcasters by Country</h2>
+      </div>
+      <div id="broadcasters" class="grid broadcaster-grid"></div>
+      <p class="note">Note: Broadcaster names are sample placeholders. Replace them with confirmed official broadcasters before publishing.</p>
+    </section>
+
+    <section class="section faq">
+      <div class="section-title">
+        <p>FAQ</p>
+        <h2>People also search</h2>
+      </div>
+      <details open><summary>Where can I check FIFA World Cup scores?</summary><p>You can check match scorecards, upcoming fixtures, group table and top scorers on this website.</p></details>
+      <details><summary>Can I watch World Cup live here?</summary><p>This website gives broadcaster information only. It does not stream matches.</p></details>
+      <details><summary>How often are scores updated?</summary><p>Update the score data in <code>script.js</code> after every match to keep the site fresh.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 World Cup Score Hub • Fan-made football information website</p>
+    <a href="sitemap.xml">Sitemap</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
