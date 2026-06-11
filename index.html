@@ -1,16 +1,68 @@
-<h1>FIFA World Cup 2026</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FIFA World Cup 2026</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            padding:20px;
+        }
+
+        h1{
+            text-align:center;
+            color:#0066cc;
+        }
+
+        section{
+            background:white;
+            padding:15px;
+            margin:15px 0;
+            border-radius:10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>FIFA World Cup 2026 Live Scorecard, Fixtures & Broadcasters</h1>
 
 <section>
-  <h2>Live Score</h2>
-  <div id="liveScore">Live score will appear here</div>
+    <h2>Live Score</h2>
+    <div id="liveScore">
+        Live scores coming soon...
+    </div>
 </section>
 
 <section>
-  <h2>Fixtures</h2>
-  <div id="fixtures"></div>
+    <h2>Fixtures</h2>
+    <div id="fixtures"></div>
 </section>
 
 <section>
-  <h2>Broadcasters</h2>
-  <div id="broadcasters"></div>
+    <h2>Broadcasters</h2>
+    <div id="broadcasters"></div>
 </section>
+
+<script>
+const fixtures = [
+    "Mexico vs South Africa",
+    "USA vs TBD",
+    "Canada vs TBD"
+];
+
+const broadcasters = [
+    "India - Zee5",
+    "USA - FOX Sports",
+    "UK - BBC"
+];
+
+document.getElementById("fixtures").innerHTML =
+fixtures.map(item => `<p>${item}</p>`).join("");
+
+document.getElementById("broadcasters").innerHTML =
+broadcasters.map(item => `<p>${item}</p>`).join("");
+</script>
+
+</body>
+</html>
