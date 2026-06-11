@@ -1,67 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>FIFA World Cup 2026</title>
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            background:#f4f4f4;
-            padding:20px;
-        }
+  <title>FIFA World Cup 2026 Live</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f6fb;
+    }
 
-        h1{
-            text-align:center;
-            color:#0066cc;
-        }
+    header {
+      background: linear-gradient(135deg, #001f54, #0066cc);
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
 
-        section{
-            background:white;
-            padding:15px;
-            margin:15px 0;
-            border-radius:10px;
-        }
-    </style>
+    nav {
+      background: #111;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      background: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    h2 {
+      color: #0066cc;
+    }
+
+    .card {
+      background: #eef5ff;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>FIFA World Cup 2026 Live Scorecard, Fixtures & Broadcasters</h1>
+<header>
+  <h1>FIFA World Cup 2026</h1>
+  <p>Live Scorecard, Fixtures & Broadcasters</p>
+</header>
 
-<section>
-    <h2>Live Score</h2>
-    <div id="liveScore">
-        Live scores coming soon...
-    </div>
+<nav>
+  <a href="#live">Live Score</a>
+  <a href="#fixtures">Fixtures</a>
+  <a href="#broadcasters">Broadcasters</a>
+  <a href="#news">News</a>
+</nav>
+
+<section id="live">
+  <h2>Live Score</h2>
+  <div class="card">
+    <h3>No live match right now</h3>
+    <p>Live score API will be added here.</p>
+  </div>
 </section>
 
-<section>
-    <h2>Fixtures</h2>
-    <div id="fixtures"></div>
+<section id="fixtures">
+  <h2>Fixtures</h2>
+  <div id="fixtureList"></div>
 </section>
 
-<section>
-    <h2>Broadcasters</h2>
-    <div id="broadcasters"></div>
+<section id="broadcasters">
+  <h2>Broadcasters</h2>
+  <div id="broadcasterList"></div>
 </section>
+
+<section id="news">
+  <h2>Latest Updates</h2>
+  <div class="card">
+    <p>Visit official FIFA website for latest updates.</p>
+    <a href="https://www.fifa.com" target="_blank">Open FIFA Official Site</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 FIFA World Cup Fan Website</p>
+</footer>
 
 <script>
 const fixtures = [
-    "Mexico vs South Africa",
-    "USA vs TBD",
-    "Canada vs TBD"
+  "Opening Match - June 2026",
+  "Group Stage Matches",
+  "Round of 32",
+  "Round of 16",
+  "Quarter Finals",
+  "Semi Finals",
+  "Final Match"
 ];
 
 const broadcasters = [
-    "India - Zee5",
-    "USA - FOX Sports",
-    "UK - BBC"
+  "India - Official broadcaster / streaming partner",
+  "USA - FOX Sports",
+  "UK - BBC / ITV",
+  "Canada - TSN / CTV",
+  "Australia - SBS"
 ];
 
-document.getElementById("fixtures").innerHTML =
-fixtures.map(item => `<p>${item}</p>`).join("");
+document.getElementById("fixtureList").innerHTML =
+  fixtures.map(match => `
+    <div class="card">
+      <h3>${match}</h3>
+      <p>Time and teams will be updated soon.</p>
+    </div>
+  `).join("");
 
-document.getElementById("broadcasters").innerHTML =
-broadcasters.map(item => `<p>${item}</p>`).join("");
+document.getElementById("broadcasterList").innerHTML =
+  broadcasters.map(channel => `
+    <div class="card">
+      <p>${channel}</p>
+    </div>
+  `).join("");
 </script>
 
 </body>
